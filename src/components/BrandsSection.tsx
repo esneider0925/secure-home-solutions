@@ -1,4 +1,5 @@
 import logoSCC from "@/assets/logo-scc.png";
+import logoDPS from "@/assets/DEPROSEG.png";
 
 const BrandsSection = () => {
   return (
@@ -9,8 +10,7 @@ const BrandsSection = () => {
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20">
           <div className="flex flex-col items-center gap-2">
-            <span className="text-2xl md:text-3xl font-heading font-bold text-foreground">DEPROSEG</span>
-            <span className="text-xs text-muted-foreground tracking-wider">N.T.</span>
+            <img src={logoDPS} alt="Secure Core Consulting S.A.S." className="h-12 md:h-16 w-auto" />
           </div>
           <div className="flex flex-col items-center gap-2">
             <img src={logoSCC} alt="Secure Core Consulting S.A.S." className="h-12 md:h-16 w-auto" />
