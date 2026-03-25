@@ -33,7 +33,9 @@ const VideoShowcase = () => {
           <div className="rounded-xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
             <video
               key={activeVideo ?? 0}
-              controls
+              controls 
+              autoplay 
+              muted 
               className="w-full aspect-video bg-dark"
               poster=""
             >
@@ -55,7 +57,7 @@ const VideoShowcase = () => {
                 (activeVideo ?? 0) === i ? "border-primary" : "border-transparent"
               }`}
             >
-              <video src={video.src} className="w-full h-full object-cover" preload="metadata" autoplay controls muted />
+              <video src={video.src} className="w-full h-full object-cover" preload="metadata" muted />
               <div className="absolute inset-0 bg-dark/40 group-hover:bg-dark/20 transition-colors flex items-center justify-center">
                 <Play size={16} className="text-card/80" />
               </div>
