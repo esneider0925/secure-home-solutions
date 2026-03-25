@@ -3,13 +3,13 @@ import { useState } from "react";
 
 const videos = [
   { src: "/videos/video-1.mp4", label: "Proceso de fabricación" },
-  { src: "/videos/video-2.mp4", label: "Instalación de puerta" },
-  { src: "/videos/video-3.mp4", label: "Detalles de cerraduras" },
+  { src: "/videos/video-2.mp4", label: "Pintura Electro-estatica" },
+  { src: "/videos/video-3.mp4", label: "Doblado de laminas de acero" },
   { src: "/videos/video-4.mp4", label: "Puerta instalada" },
-  { src: "/videos/video-5.mp4", label: "Fabricación en planta" },
-  { src: "/videos/video-6.mp4", label: "Maquinaria especializada" },
-  { src: "/videos/video-7.mp4", label: "Ensamble de puerta" },
-  { src: "/videos/video-8.mp4", label: "Acabados finales" },
+  { src: "/videos/video-5.mp4", label: "Enchapado de puerta" },
+  { src: "/videos/video-6.mp4", label: "Enchapado de marco" },
+  { src: "/videos/video-7.mp4", label: "Troquelado con tecnologia de punta" },
+  { src: "/videos/video-8.mp4", label: "Precision en fabricacion" },
 ];
 
 const VideoShowcase = () => {
