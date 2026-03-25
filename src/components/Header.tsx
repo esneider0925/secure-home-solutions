@@ -33,9 +33,6 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
         <a href="#inicio" className="flex items-center gap-2">
           <img src={logo} alt="WGPuertas" className="h-10 md:h-12 w-auto" />
-          <span className="font-heading font-bold text-lg md:text-xl text-foreground">
-            WG<span className="text-primary">Puertas</span>
-          </span>
         </a>
 
         <nav className="hidden lg:flex items-center gap-6">
