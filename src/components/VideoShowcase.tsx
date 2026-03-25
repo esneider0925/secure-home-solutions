@@ -55,7 +55,7 @@ const VideoShowcase = () => {
                 (activeVideo ?? 0) === i ? "border-primary" : "border-transparent"
               }`}
             >
-              <video src={video.src} className="w-full h-full object-cover" muted preload="metadata" />
+              <video src={video.src} className="w-full h-full object-cover" preload="metadata" autoplay controls muted />
               <div className="absolute inset-0 bg-dark/40 group-hover:bg-dark/20 transition-colors flex items-center justify-center">
                 <Play size={16} className="text-card/80" />
               </div>
