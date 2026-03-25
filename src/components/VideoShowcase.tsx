@@ -36,7 +36,7 @@ const VideoShowcase = () => {
               controls 
               autoplay 
               muted 
-              className="w-full aspect-video bg-dark"
+              className="w-full aspect-video bg-dark video-mb"
               poster=""
             >
               <source src={videos[activeVideo ?? 0].src} type="video/mp4" />
