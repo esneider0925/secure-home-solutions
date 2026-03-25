@@ -10,7 +10,7 @@ const BrandsSection = () => {
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-12 md:gap-20">
           <div className="flex flex-col items-center gap-2">
-            <img src={logoDPS} alt="Secure Core Consulting S.A.S." className="h-12 md:h-16 w-auto" />
+            <img src={logoDPS} alt="Secure Core Consulting S.A.S." className="h-16 md:h-16 w-auto" />
           </div>
           <div className="flex flex-col items-center gap-2">
             <img src={logoSCC} alt="Secure Core Consulting S.A.S." className="h-12 md:h-16 w-auto" />
