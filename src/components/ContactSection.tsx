@@ -1,7 +1,7 @@
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const WHATSAPP_URL = "https://wa.me/573000000000?text=Hola%20WGPuertas";
+const WHATSAPP_URL = "https://wa.me/573012793059?text=Hola%20WGPuertas";
 
 const ContactSection = () => {
   return (
