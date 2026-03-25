@@ -38,6 +38,7 @@ const VideoShowcase = () => {
               muted 
               className="w-full aspect-video bg-dark"
               poster=""
+              style="height: 500px;"
             >
               <source src={videos[activeVideo ?? 0].src} type="video/mp4" />
             </video>
