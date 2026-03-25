@@ -12,7 +12,7 @@ const navLinks = [
   { label: "Contacto", href: "#contacto" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/573000000000?text=Hola%20WGPuertas,%20quiero%20más%20información";
+const WHATSAPP_URL = "https://wa.me/573012793059?text=Hola%20WGPuertas,%20quiero%20más%20información";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
