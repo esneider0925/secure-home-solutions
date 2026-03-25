@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import persianasImg from "@/assets/persianas.jpg";
 import cortinasImg from "@/assets/cortinas.jpg";
 
-const WHATSAPP_URL = "https://wa.me/573000000000?text=Hola%20WGPuertas,%20quiero%20cotizar%20persianas%20o%20cortinas";
+const WHATSAPP_URL = "https://wa.me/573012793059?text=Hola%20WGPuertas,%20quiero%20cotizar%20persianas%20o%20cortinas";
 
 const BlindsSection = () => {
   return (
