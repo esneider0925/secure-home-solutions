@@ -21,7 +21,7 @@ const VideoShowcase = () => {
         <div className="text-center mb-12">
           <span className="text-primary font-body font-semibold text-sm uppercase tracking-widest">Nuestro trabajo</span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold mt-2">
-            Videos de Instalaciones
+            Videos de Procesos
           </h2>
           <p className="text-card/70 mt-4 max-w-2xl mx-auto text-lg font-light">
             Conoce de primera mano nuestro proceso de fabricación e instalación de puertas de seguridad.
