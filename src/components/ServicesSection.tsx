@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Key, Lock, Wrench } from "lucide-react";
-import servicesImg from "@/assets/services.jpg";
+import factoryImg from "@/assets/factory-1-machines.jpg";
 
 const WHATSAPP_URL = "https://wa.me/573000000000?text=Hola%20WGPuertas,%20necesito%20un%20servicio";
 
@@ -15,7 +15,7 @@ const ServicesSection = () => {
   return (
     <section id="servicios" className="section-padding bg-foreground text-card relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <img src={servicesImg} alt="" className="w-full h-full object-cover" />
+        <img src={factoryImg} alt="" className="w-full h-full object-cover" />
       </div>
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-12">
@@ -38,6 +38,23 @@ const ServicesSection = () => {
               <p className="text-sm text-card/60 font-light">{s.desc}</p>
             </div>
           ))}
+        </div>
+
+        {/* Factory process gallery */}
+        <div className="mt-12">
+          <h3 className="text-xl font-heading font-semibold text-card text-center mb-6">Proceso de Fabricación</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              { src: "/images/factory-2-steel.jpg", alt: "Corte de lámina de acero" },
+              { src: "/images/factory-4-welding.jpg", alt: "Soldadura y ensamble" },
+              { src: "/images/factory-3-doors.jpg", alt: "Puertas en producción" },
+              { src: "/images/factory-5-packed.jpg", alt: "Puertas empacadas listas para entrega" },
+            ].map((img, i) => (
+              <div key={i} className="rounded-lg overflow-hidden">
+                <img src={img.src} alt={img.alt} className="w-full h-40 md:h-48 object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-10">

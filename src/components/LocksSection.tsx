@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import locksImg from "@/assets/locks-collection.jpg";
+import locksImg from "@/assets/door-7-open-locks.jpg";
+import lockDigital from "@/assets/door-5-white-digital.jpg";
+import lockDetail from "@/assets/door-10-hallway.jpg";
 
 const WHATSAPP_URL = "https://wa.me/573000000000?text=Hola%20WGPuertas,%20quiero%20cotizar%20cerraduras";
 
@@ -24,9 +26,17 @@ const LocksSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
-          <div className="rounded-xl overflow-hidden shadow-xl">
-            <img src={locksImg} alt="Colección de cerraduras" className="w-full h-96 object-cover" />
+        <div className="grid lg:grid-cols-2 gap-10 items-center mb-10">
+          <div className="grid grid-cols-2 gap-3">
+            <div className="rounded-xl overflow-hidden shadow-xl col-span-2">
+              <img src={locksImg} alt="Sistema de cerradura multipunto" className="w-full h-64 object-cover" />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img src={lockDigital} alt="Cerradura digital" className="w-full h-48 object-cover" />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img src={lockDetail} alt="Detalle de cerraduras" className="w-full h-48 object-cover" />
+            </div>
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             {locks.map((lock) => (
