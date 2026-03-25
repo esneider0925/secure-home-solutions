@@ -19,12 +19,12 @@ const ContactSection = () => {
           <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="bg-card/10 rounded-xl p-6 text-center hover:bg-card/15 transition-all border border-card/10 hover:border-primary/40">
             <Phone className="w-8 h-8 text-primary mx-auto mb-3" />
             <h4 className="font-heading font-semibold mb-1">WhatsApp</h4>
-            <p className="text-sm text-card/60">+57 300 000 0001</p>
+            <p className="text-sm text-card/60">+57 301 279 3059</p>
           </a>
           <a href="mailto:info@wgpuertas.com" className="bg-card/10 rounded-xl p-6 text-center hover:bg-card/15 transition-all border border-card/10 hover:border-primary/40">
             <Mail className="w-8 h-8 text-primary mx-auto mb-3" />
             <h4 className="font-heading font-semibold mb-1">Correo</h4>
-            <p className="text-sm text-card/60">info@wgpuertas.com</p>
+            <p className="text-sm text-card/60">Puertasdeseguridadwg@gmail.com</p>
           </a>
           <a href="#" className="bg-card/10 rounded-xl p-6 text-center hover:bg-card/15 transition-all border border-card/10 hover:border-primary/40">
             <MapPin className="w-8 h-8 text-primary mx-auto mb-3" />
