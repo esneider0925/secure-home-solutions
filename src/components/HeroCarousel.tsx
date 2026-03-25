@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import heroDoor from "@/assets/hero-door.jpg";
-import heroLocks from "@/assets/hero-locks.jpg";
+import heroDoor from "@/assets/door-4-frontal.jpg";
+import heroLocks from "@/assets/door-7-open-locks.jpg";
 import heroBlinds from "@/assets/hero-blinds.jpg";
 
 const WHATSAPP_URL = "https://wa.me/573000000000?text=Hola%20WGPuertas,%20quiero%20más%20información";
