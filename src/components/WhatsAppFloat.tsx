@@ -1,4 +1,4 @@
-const WHATSAPP_URL = "https://wa.me/+573012793059?text=Hola%20WGPuertas";
+const WHATSAPP_URL = "https://wa.me/573012793059?text=Hola%20WGPuertas";
 
 const WhatsAppFloat = () => {
   return (
