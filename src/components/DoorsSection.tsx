@@ -14,7 +14,7 @@ import door11 from "@/assets/door-11-oak.jpg";
 import door12 from "@/assets/door-12-construction.jpg";
 import door13 from "@/assets/door-13-open.jpg";
 
-const WHATSAPP_URL = "https://wa.me/573012793059?text=Hola%20WGPuertas,%20quiero%20cotizar%20una%20puerta%20de%20seguridad";
+const WHATSAPP_URL = "https://wa.me/573117226787?text=Hola%20WGPuertas,%20quiero%20cotizar%20una%20puerta%20de%20seguridad";
 
 const galleryImages = [
   { src: door4, alt: "Puerta de seguridad acabado madera clara" },
