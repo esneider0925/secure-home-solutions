@@ -5,7 +5,7 @@ import heroDoor from "@/assets/door-4-frontal.jpg";
 import heroLocks from "@/assets/door-7-open-locks.jpg";
 import heroBlinds from "@/assets/hero-blinds.jpg";
 
-const WHATSAPP_URL = "https://wa.me/573012793059?text=Hola%20WGPuertas,%20quiero%20más%20información";
+const WHATSAPP_URL = "https://wa.me/573245607992?text=Hola%20WGPuertas,%20quiero%20más%20información";
 
 const slides = [
   {
