@@ -85,7 +85,7 @@ const DoorsSection = () => {
             </p>
             <ul className="space-y-2 text-foreground/80 mb-6">
               <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-primary rounded-full" />Acero calibre 16 y 18
+                <span className="w-2 h-2 bg-primary rounded-full" />Acero calibre 14 y 16
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full" />Cerradura multipunto
