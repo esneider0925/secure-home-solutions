@@ -3,7 +3,7 @@ import locksImg from "@/assets/door-7-open-locks.jpg";
 import lockDigital from "@/assets/door-5-white-digital.jpg";
 import lockDetail from "@/assets/door-10-hallway.jpg";
 
-const WHATSAPP_URL = "https://wa.me/573012793059?text=Hola%20WGPuertas,%20quiero%20cotizar%20cerraduras";
+const WHATSAPP_URL = "https://wa.me/573245607992?text=Hola%20WGPuertas,%20quiero%20cotizar%20cerraduras";
 
 const locks = [
   { name: "Cerradura Multipunto", desc: "Máxima seguridad con 3 puntos de anclaje" },
