@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Shield, Key, Lock, Wrench } from "lucide-react";
+import { Shield, Key, Lock, Wrench, Ruler } from "lucide-react";
 import factoryImg from "@/assets/factory-1-machines.jpg";
 
 const WHATSAPP_URL = "https://wa.me/573117226787?text=Hola%20WGPuertas,%20necesito%20un%20servicio";
