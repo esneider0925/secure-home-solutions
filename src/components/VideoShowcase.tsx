@@ -34,7 +34,7 @@ const VideoShowcase = () => {
             <video
               key={activeVideo ?? 0}
               controls 
-              autoplay 
+              autoPlay 
               muted 
               className="w-full aspect-video bg-dark video-mb"
               poster=""
