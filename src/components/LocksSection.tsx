@@ -1,7 +1,19 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import locksImg from "@/assets/door-7-open-locks.jpg";
-import lockDigital from "@/assets/door-5-white-digital.jpg";
-import lockDetail from "@/assets/door-10-hallway.jpg";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import useEmblaCarousel from "embla-carousel-react";
+
+import locksImg from "@/assets/lock-1-multipoint.png";
+import lockParts from "@/assets/lock-2-parts.png";
+import lockDoorFront from "@/assets/lock-3-door-front.png";
+import lockDoorSide from "@/assets/lock-4-door-side.png";
+import lockInstalled from "@/assets/lock-5-installed.png";
+import lockDigitalFace from "@/assets/lock-6-digital-face.png";
+import lockDigitalKeypad from "@/assets/lock-7-digital-keypad.png";
+import lock4kProduct from "@/assets/lock-8-4k-product.png";
+import lockHandles from "@/assets/lock-9-handles.png";
+import lockHandlesAlt from "@/assets/lock-10-handles-alt.png";
+
 import brandMultlock from "@/assets/brand-multlock.png";
 import brand4k from "@/assets/brand-4k.png";
 import brandSecuremme from "@/assets/brand-securemme.png";
@@ -12,6 +24,19 @@ import brandCisa from "@/assets/brand-cisa.png";
 
 const WHATSAPP_URL = "https://wa.me/573245607992?text=Hola%20WGPuertas,%20quiero%20cotizar%20cerraduras";
 
+const lockImages = [
+  { src: locksImg, alt: "Cerradura multipunto con llaves" },
+  { src: lockParts, alt: "Componentes de cerradura de seguridad" },
+  { src: lockDoorFront, alt: "Puerta con cerradura instalada - frente" },
+  { src: lockDoorSide, alt: "Puerta con cerradura instalada - lateral" },
+  { src: lockInstalled, alt: "Cerradura instalada en puerta" },
+  { src: lockDigitalFace, alt: "Cerradura digital con reconocimiento facial" },
+  { src: lockDigitalKeypad, alt: "Cerradura digital con teclado" },
+  { src: lock4kProduct, alt: "Cerradura 4K producto" },
+  { src: lockHandles, alt: "Manijas y cerraduras" },
+  { src: lockHandlesAlt, alt: "Variedad de manijas" },
+];
+
 const locks = [
   { name: "Cerradura Multipunto", desc: "Máxima seguridad con 3 puntos de anclaje" },
   { name: "Cerradura Digital", desc: "Acceso con huella, código, tarjeta, app y reconocimiento facial. Baterías en litio recargables" },
@@ -20,6 +45,12 @@ const locks = [
 ];
 
 const LocksSection = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
+  const [lightbox, setLightbox] = useState<number | null>(null);
+
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
+
   return (
     <section id="cerraduras" className="section-padding bg-card">
       <div className="container mx-auto">
@@ -33,26 +64,54 @@ const LocksSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-10 items-center mb-10">
-          <div className="grid grid-cols-2 gap-3">
-            <div className="rounded-xl overflow-hidden shadow-xl col-span-2">
-              <img src={locksImg} alt="Sistema de cerradura multipunto" className="w-full h-64 object-cover" />
-            </div>
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img src={lockDigital} alt="Cerradura digital" className="w-full h-48 object-cover" />
-            </div>
-            <div className="rounded-xl overflow-hidden shadow-lg">
-              <img src={lockDetail} alt="Detalle de cerraduras" className="w-full h-48 object-cover" />
+        {/* Image carousel */}
+        <div className="relative mb-10">
+          <div ref={emblaRef} className="overflow-hidden rounded-xl">
+            <div className="flex">
+              {lockImages.map((img, i) => (
+                <div key={i} className="min-w-0 shrink-0 grow-0 basis-1/2 md:basis-1/3 pl-3 first:pl-0">
+                  <div
+                    className="rounded-xl overflow-hidden shadow-lg cursor-pointer aspect-[4/3]"
+                    onClick={() => setLightbox(i)}
+                  >
+                    <img src={img.src} alt={img.alt} className="w-full h-full object-cover object-center" />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {locks.map((lock) => (
-              <div key={lock.name} className="bg-warm-bg rounded-lg p-6 border border-border hover:border-primary/30 hover:shadow-md transition-all">
-                <h4 className="font-heading font-semibold text-foreground mb-2">{lock.name}</h4>
-                <p className="text-sm text-muted-foreground font-light">{lock.desc}</p>
-              </div>
-            ))}
+          <button onClick={scrollPrev} className="absolute left-2 top-1/2 -translate-y-1/2 bg-foreground/70 text-card rounded-full p-2 hover:bg-foreground/90 transition-colors z-10">
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button onClick={scrollNext} className="absolute right-2 top-1/2 -translate-y-1/2 bg-foreground/70 text-card rounded-full p-2 hover:bg-foreground/90 transition-colors z-10">
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Lightbox */}
+        {lightbox !== null && (
+          <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onClick={() => setLightbox(null)}>
+            <button className="absolute top-4 right-4 text-white" onClick={() => setLightbox(null)}>
+              <X className="w-8 h-8" />
+            </button>
+            <button className="absolute left-4 top-1/2 -translate-y-1/2 text-white" onClick={(e) => { e.stopPropagation(); setLightbox((lightbox - 1 + lockImages.length) % lockImages.length); }}>
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+            <img src={lockImages[lightbox].src} alt={lockImages[lightbox].alt} className="max-h-[85vh] max-w-[90vw] object-contain rounded-lg" onClick={(e) => e.stopPropagation()} />
+            <button className="absolute right-4 top-1/2 -translate-y-1/2 text-white" onClick={(e) => { e.stopPropagation(); setLightbox((lightbox + 1) % lockImages.length); }}>
+              <ChevronRight className="w-8 h-8" />
+            </button>
           </div>
+        )}
+
+        {/* Lock types */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+          {locks.map((lock) => (
+            <div key={lock.name} className="bg-warm-bg rounded-lg p-6 border border-border hover:border-primary/30 hover:shadow-md transition-all">
+              <h4 className="font-heading font-semibold text-foreground mb-2">{lock.name}</h4>
+              <p className="text-sm text-muted-foreground font-light">{lock.desc}</p>
+            </div>
+          ))}
         </div>
 
         {/* Brands marquee */}
