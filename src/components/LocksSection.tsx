@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import locksImg from "@/assets/door-7-open-locks.jpg";
 import lockDigital from "@/assets/door-5-white-digital.jpg";
 import lockDetail from "@/assets/door-10-hallway.jpg";
+import brandMultlock from "@/assets/brand-multlock.png";
+import brand4k from "@/assets/brand-4k.png";
+import brandSecuremme from "@/assets/brand-securemme.png";
+import brandIseo from "@/assets/brand-iseo.png";
+import brandKl from "@/assets/brand-kl.png";
+import brandKale from "@/assets/brand-kale.png";
+import brandCisa from "@/assets/brand-cisa.png";
 
 const WHATSAPP_URL = "https://wa.me/573245607992?text=Hola%20WGPuertas,%20quiero%20cotizar%20cerraduras";
 
