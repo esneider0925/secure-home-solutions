@@ -29,7 +29,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {services.map((s) => (
             <div key={s.title} className="bg-card/10 backdrop-blur-sm rounded-xl p-6 border border-card/10 hover:border-primary/50 hover:bg-card/15 transition-all text-center group">
               <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/30 transition-colors">
