@@ -55,6 +55,26 @@ const LocksSection = () => {
           </div>
         </div>
 
+        {/* Brands marquee */}
+        <div className="mt-10 mb-10">
+          <p className="text-center text-lg font-body text-foreground font-semibold mb-6">
+            Trabajamos con las marcas de cerraduras más reconocidas y de calidad en el mercado:
+          </p>
+          <div className="overflow-hidden relative">
+            <div className="flex animate-marquee-locks gap-12 w-max">
+              {[brandMultlock, brand4k, brandSecuremme, brandIseo, brandKl, brandKale, brandCisa,
+                brandMultlock, brand4k, brandSecuremme, brandIseo, brandKl, brandKale, brandCisa].map((logo, i) => (
+                <img
+                  key={i}
+                  src={logo}
+                  alt="Marca de cerraduras"
+                  className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
         <div className="text-center mt-10">
           <Button variant="whatsapp" size="lg" asChild>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
