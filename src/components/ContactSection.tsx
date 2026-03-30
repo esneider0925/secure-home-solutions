@@ -39,7 +39,7 @@ const ContactSection = () => {
               <Facebook className="w-8 h-8 text-primary" />
             </div>
             <h4 className="font-heading font-semibold mb-1">Redes Sociales</h4>
-            <p className="text-sm text-card/60">@wgpuertas</p>
+            <p className="text-sm text-card/60">@puertasdeseguridadwg</p>
           </div>
         </div>
 
