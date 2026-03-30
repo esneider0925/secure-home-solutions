@@ -66,3 +66,12 @@
 .video-mb {
  height: 500px;
 }
+
+@keyframes marquee-locks {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee-locks {
+  animation: marquee-locks 20s linear infinite;
+}
