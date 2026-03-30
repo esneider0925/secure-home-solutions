@@ -7,7 +7,7 @@ const WHATSAPP_URL = "https://wa.me/573245607992?text=Hola%20WGPuertas,%20quiero
 
 const locks = [
   { name: "Cerradura Multipunto", desc: "Máxima seguridad con 3 puntos de anclaje" },
-  { name: "Cerradura Digital", desc: "Acceso con huella, código o tarjeta" },
+  { name: "Cerradura Digital", desc: "Acceso con huella, código, tarjeta, app y reconocimiento facial. Baterías en litio recargables" },
   { name: "Cerradura de Sobreponer", desc: "Instalación rápida y resistente" },
   { name: "Cerradura de Embutir", desc: "Integrada al marco de la puerta" },
 ];
