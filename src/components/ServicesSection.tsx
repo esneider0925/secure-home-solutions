@@ -9,6 +9,7 @@ const services = [
   { icon: Key, title: "Desbloqueo de Cerraduras", desc: "Servicio de emergencia 24/7" },
   { icon: Lock, title: "Apertura de Cajas Fuertes", desc: "Técnicos certificados" },
   { icon: Wrench, title: "Mantenimiento", desc: "Preventivo y correctivo" },
+  { icon: Ruler, title: "Toma de Medidas", desc: "Medición profesional para puertas y cortinas" },
 ];
 
 const ServicesSection = () => {
