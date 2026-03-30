@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import locksImg from "@/assets/door-7-open-locks.jpg";
 import lockDigital from "@/assets/door-5-white-digital.jpg";
 import lockDetail from "@/assets/door-10-hallway.jpg";
+import brandMultlock from "@/assets/brand-multlock.png";
+import brand4k from "@/assets/brand-4k.png";
+import brandSecuremme from "@/assets/brand-securemme.png";
+import brandIseo from "@/assets/brand-iseo.png";
+import brandKl from "@/assets/brand-kl.png";
+import brandKale from "@/assets/brand-kale.png";
+import brandCisa from "@/assets/brand-cisa.png";
 
 const WHATSAPP_URL = "https://wa.me/573245607992?text=Hola%20WGPuertas,%20quiero%20cotizar%20cerraduras";
 
@@ -45,6 +52,26 @@ const LocksSection = () => {
                 <p className="text-sm text-muted-foreground font-light">{lock.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Brands marquee */}
+        <div className="mt-10 mb-10">
+          <p className="text-center text-lg font-body text-foreground font-semibold mb-6">
+            Trabajamos con las marcas de cerraduras más reconocidas y de calidad en el mercado:
+          </p>
+          <div className="overflow-hidden relative">
+            <div className="flex animate-marquee-locks gap-12 w-max">
+              {[brandMultlock, brand4k, brandSecuremme, brandIseo, brandKl, brandKale, brandCisa,
+                brandMultlock, brand4k, brandSecuremme, brandIseo, brandKl, brandKale, brandCisa].map((logo, i) => (
+                <img
+                  key={i}
+                  src={logo}
+                  alt="Marca de cerraduras"
+                  className="h-16 w-auto object-contain grayscale hover:grayscale-0 transition-all"
+                />
+              ))}
+            </div>
           </div>
         </div>
 
