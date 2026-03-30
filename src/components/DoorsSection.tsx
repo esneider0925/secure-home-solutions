@@ -44,7 +44,7 @@ const DoorsSection = () => {
     <section id="puertas" className="section-padding bg-warm-bg">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <span className="text-primary font-body font-semibold text-sm uppercase tracking-widest">Seguridad para tu hogar</span>
+          <span className="text-primary font-body font-semibold text-sm uppercase tracking-widest">la seguridad de tu hogar es lo primero</span>
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mt-2">
             Puertas de Seguridad
           </h2>
@@ -80,12 +80,11 @@ const DoorsSection = () => {
             </h3>
             <p className="text-muted-foreground mb-4 font-light">
               Contamos con una amplia gama de puertas de seguridad: desde modelos clásicos con barras reforzadas
-              hasta diseños contemporáneos con acabados premium. Cada puerta es fabricada con acero de alta resistencia
-              y sistemas de cerradura multipunto.
+              hasta diseños contemporáneos con acabados Premium. Cada puerta es fabricada con acero de alta resistencia, cerraduras multipunto y sistemas de multibloqueo.
             </p>
             <ul className="space-y-2 text-foreground/80 mb-6">
               <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-primary rounded-full" />Acero calibre 14 y 16
+                <span className="w-2 h-2 bg-primary rounded-full" />Acero calibre 14 y 16 o según requerimiento
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-primary rounded-full" />Cerradura multipunto
