@@ -73,21 +73,43 @@ const DoorsSection = () => {
         </div>
 
         {/* Galería de puertas */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mb-12">
-          {galleryImages.map((img, i) => (
-            <div
-              key={i}
-              className="rounded-lg overflow-hidden shadow-lg cursor-pointer group relative aspect-[3/4]"
-              onClick={() => openLightbox(i)}
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/20 transition-colors duration-300" />
+        <div className="relative mb-12">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex -ml-3 md:-ml-4">
+              {galleryImages.map((img, i) => (
+                <div
+                  key={i}
+                  className="min-w-0 shrink-0 grow-0 basis-1/2 md:basis-1/3 pl-3 md:pl-4"
+                >
+                  <div
+                    className="rounded-lg overflow-hidden shadow-lg cursor-pointer group relative aspect-[3/4]"
+                    onClick={() => openLightbox(i)}
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-dark/0 group-hover:bg-dark/20 transition-colors duration-300" />
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+          <button
+            onClick={() => emblaApi?.scrollPrev()}
+            disabled={!canScrollPrev}
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-card/80 hover:bg-card shadow-md text-foreground disabled:opacity-30 transition-colors"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <button
+            onClick={() => emblaApi?.scrollNext()}
+            disabled={!canScrollNext}
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-card/80 hover:bg-card shadow-md text-foreground disabled:opacity-30 transition-colors"
+          >
+            <ChevronRight size={24} />
+          </button>
         </div>
 
         {/* Características */}
