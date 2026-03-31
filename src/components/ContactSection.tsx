@@ -23,20 +23,24 @@ const ContactSection = () => {
             <a href={WHATSAPP_URL_1} target="_blank" rel="noopener noreferrer" className="block text-sm text-card/60 hover:text-primary transition-colors">+57 324 560 7992</a>
             <a href={WHATSAPP_URL_2} target="_blank" rel="noopener noreferrer" className="block text-sm text-card/60 hover:text-primary transition-colors mt-1">+57 311 722 6787</a>
           </div>
-          <a href="mailto:Puertasdeseguridadwg@gmail.com" className="bg-card/10 rounded-xl p-6 text-center hover:bg-card/15 transition-all border border-card/10 hover:border-primary/40">
+          <a href="mailto:Puertasdeseguridadwg@gmail.com" className="bg-card/10 rounded-xl p-6 text-center hover:bg-card/15 transition-all border border-card/10 hover:border-primary/40 overflow-hidden">
             <Mail className="w-8 h-8 text-primary mx-auto mb-3" />
             <h4 className="font-heading font-semibold mb-1">Correo</h4>
-            <p className="text-sm text-card/60">Puertasdeseguridadwg@gmail.com</p>
+            <p className="text-xs sm:text-sm text-card/60 break-all">Puertasdeseguridadwg@gmail.com</p>
           </a>
           <a href="https://maps.google.com/?q=Cl.+71c+%2328B-40,+Bogotá" target="_blank" rel="noopener noreferrer" className="bg-card/10 rounded-xl p-6 text-center hover:bg-card/15 transition-all border border-card/10 hover:border-primary/40">
             <MapPin className="w-8 h-8 text-primary mx-auto mb-3" />
             <h4 className="font-heading font-semibold mb-1">Ubicación</h4>
             <p className="text-sm text-card/60">Cl. 71c #28B-40, Bogotá</p>
           </a>
-          <div className="bg-card/10 rounded-xl p-6 text-center border border-card/10">
+          <div className="bg-card/10 rounded-xl p-6 text-center border border-card/10 hover:border-primary/40 transition-all">
             <div className="flex justify-center gap-4 mb-3">
-              <Instagram className="w-8 h-8 text-primary" />
-              <Facebook className="w-8 h-8 text-primary" />
+              <a href="https://www.instagram.com/puertasdeseguridadwg/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                <Instagram className="w-8 h-8 text-primary" />
+              </a>
+              <a href="https://www.facebook.com/share/18R3HJwwMC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
+                <Facebook className="w-8 h-8 text-primary" />
+              </a>
             </div>
             <h4 className="font-heading font-semibold mb-1">Redes Sociales</h4>
             <p className="text-sm text-card/60">@puertasdeseguridadwg</p>
