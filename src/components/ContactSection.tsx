@@ -16,7 +16,7 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-10">
           <div className="bg-card/10 rounded-xl p-6 text-center border border-card/10 hover:border-primary/40 transition-all">
             <Phone className="w-8 h-8 text-primary mx-auto mb-3" />
             <h4 className="font-heading font-semibold mb-2">WhatsApp</h4>
@@ -33,18 +33,16 @@ const ContactSection = () => {
             <h4 className="font-heading font-semibold mb-1">Ubicación</h4>
             <p className="text-sm text-card/60">Cl. 71c #28B-40, Bogotá</p>
           </a>
-          <div className="bg-card/10 rounded-xl p-6 text-center border border-card/10 hover:border-primary/40 transition-all">
-            <div className="flex justify-center gap-4 mb-3">
-              <a href="https://www.instagram.com/puertasdeseguridadwg/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                <Instagram className="w-8 h-8 text-primary" />
-              </a>
-              <a href="https://www.facebook.com/share/18R3HJwwMC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                <Facebook className="w-8 h-8 text-primary" />
-              </a>
-            </div>
-            <h4 className="font-heading font-semibold mb-1">Redes Sociales</h4>
+          <a href="https://www.instagram.com/puertasdeseguridadwg/" target="_blank" rel="noopener noreferrer" className="bg-card/10 rounded-xl p-6 text-center border border-card/10 hover:border-primary/40 hover:bg-card/15 transition-all">
+            <Instagram className="w-8 h-8 text-primary mx-auto mb-3" />
+            <h4 className="font-heading font-semibold mb-1">Instagram</h4>
             <p className="text-sm text-card/60">@puertasdeseguridadwg</p>
-          </div>
+          </a>
+          <a href="https://www.facebook.com/share/18R3HJwwMC/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="bg-card/10 rounded-xl p-6 text-center border border-card/10 hover:border-primary/40 hover:bg-card/15 transition-all">
+            <Facebook className="w-8 h-8 text-primary mx-auto mb-3" />
+            <h4 className="font-heading font-semibold mb-1">Facebook</h4>
+            <p className="text-sm text-card/60">WG Puertas de Seguridad</p>
+          </a>
         </div>
 
         {/* Google Maps embed */}
